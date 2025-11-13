@@ -169,7 +169,7 @@ def has_capacity_to_host_proposed(self, service: object) -> bool:
     return can_host
 
 
-def MASS(parameters):
+def MASS(parameters): # This name has been changed in the paper to MATS
     # Override 'has_capacity_to_host' for all instances of the EdgeServer class
     EdgeServer.has_capacity_to_host = has_capacity_to_host_proposed
 
