@@ -368,7 +368,7 @@ for i in range(len(central_node_coords)):
 current_dir_dataset = os.path.dirname(__file__)
 read_file = os.path.join(current_dir_dataset, "container_images.json")
 
-with open("container_images.json", "r", encoding="UTF-8") as read_file:
+with open("edge_sim_py/dataset_generator/container_images.json", "r", encoding="UTF-8") as read_file:
     container_image_specifications = json.load(read_file)
 
 ### Manually add "registry" image specification from DockerHub in container_images.json to be used by container registries
