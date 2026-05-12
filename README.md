@@ -11,9 +11,10 @@ All packages required by EdgeSimPy are listed in the [pyproject.toml](pyproject.
 Assuming you have already installed a recent version of [Poetry](https://python-poetry.org/) ([how to install](https://python-poetry.org/docs/)) and your Python version is ```3.10.x```, you can install the required packages for EdgeSimPy using the following command:
 ```bash
 poetry install
-poetry shell
+poetry env activate
 ```
-After completing the above step, you need to change the 'Python Interpreter' in your IDE to point to the 'Poetry Environment' location. The path was output by `poetry shell`, and you need to append `\Scripts\python.exe` to the end, resulting in a path like `[output from poetry shell]\Scripts\python.exe`.
+After completing the above step, you see an activation command (Windows) like `& "[address]\AppData\Local\pypoetry\Cache\virtualenvs\edge-sim-py-[...]\Scripts\activate.ps1"` that you need to run it in the terminal.
+<!-- need to change the 'Python Interpreter' in your IDE to point to the 'Poetry Environment' location. The path was output by `poetry shell`, and you need to append `\Scripts\python.exe` to the end, resulting in a path like `[output from poetry shell]\Scripts\python.exe`. -->
 
 
 ## Selecting & Running Scheduling Algorithms
